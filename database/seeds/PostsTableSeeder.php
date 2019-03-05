@@ -1,16 +1,17 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Post;
 
-class DatabaseSeeder extends Seeder
+class PostsTableSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(PostsTableSeeder::class);
+        
     }
 }
