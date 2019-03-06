@@ -1,4 +1,5 @@
 <template>
+    <!-- MODAL -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -33,14 +34,23 @@ import { EventBus } from '../event/event-bus';
 
         mounted() {
 
+            /**
+             * Listens for global show-modal event(from chanel-component)
+             */
             EventBus.$on('show-modal', (payload) => {
 
-                this.setFeed(payload);
+            /**
+             * Calls setFeed method after mount
+             */
+            this.setFeed(payload);
             });
 
         },
 
         methods: {
+            /**
+             * Populates modal element with required feed data
+             */
             setFeed(feed) {
                 this.feed = feed;
             }
