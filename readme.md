@@ -14,7 +14,7 @@ Functions:
 Application is built with laravel framework. <br>
 Frontend: 
 - javascript - vueJs
-- css - bootsrap5
+- css - bootstrap4
 
 ---
 
